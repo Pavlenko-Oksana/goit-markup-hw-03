@@ -27,8 +27,13 @@ a{
   text-decoration: none;
 }
 
-.list{
-  list-style: none;
+
+.conainer{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid teal;
 }
 
 /* logo */
@@ -43,13 +48,19 @@ a{
 .logo .accent{
  color: var(--accent-color);
 }
-
-ul{
- list-style: none;
+.list{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 }
+ 
 
 /* hero */
 .button-hero{
+display: inline-block;
+border-radius: 4px;
+min-width: 200px;
+height: 50px;
 background-color: var(--accent-color);
 color: var(--accent-color-white);
 font-weight: 700;
@@ -59,6 +70,7 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+margin-bottom: 94px;
 }
 
 .title-hero{
@@ -69,6 +81,8 @@ letter-spacing: 0.06em;
  letter-spacing: 0.06em;
  text-transform: uppercase;
  color: #FFFFFF; 
+ margin-top: 0px;
+ margin-bottom: 30px;
  background-color: violet;
 
 }
@@ -92,10 +106,25 @@ color:var(--accent-color);
 }
 
 /* section */
+.section{
+  
+ 
+
+}
+
+
 .section-paragraph,
 .section-profession,
 .section-customer{
  color:var(--secondary-text-color);
+}
+
+.qualities-img{
+  margin-bottom: 30px;
+}
+
+.qualities-name{
+  margin-bottom: 10px;
 }
 
 .section-customer{
@@ -113,11 +142,40 @@ letter-spacing: 0.06em;
 color: #212121;
 }
 
+
+.section-name{
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.section-customer{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.title-serv,
+.title-regular-customers,
+.title-team{
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.team-name{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.section-profession{
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
 .paragraph{
  color: var(--secondary-text-color);
  font-weight: 400;
  font-size: 14px;
  line-height: 1.7;
+ margin-top: 0px;
+ margin-bottom: 0px;
  }
 
 .section-paragraph{
@@ -127,6 +185,8 @@ color: #212121;
  font-size: 18px;
  line-height: 1.5;
  background-color: violet;
+ margin-top: 0px;
+ margin-bottom: 0px;
 }
 
 .section-services{
@@ -149,6 +209,10 @@ footer{
 .copyright{
   color: var(--secondary-text-color);
 
+}
+.logo.footer{
+margin-top: 0px;
+margin-bottom: 8px;
 }
 
 .logo-footer{
