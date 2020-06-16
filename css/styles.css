@@ -22,6 +22,11 @@ margin: 0;
 font-family: Roboto, sans-serif;
 letter-spacing: 0.03em;
 }
+.list{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
 
 a{
   text-decoration: none;
@@ -32,10 +37,20 @@ a{
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   outline: 2px solid teal;
 }
 
+.main-nav{
+  display: flex;
+  align-items: center;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+}
 /* logo */
 .logo{
  color: var(--primary-text-color);
@@ -48,11 +63,7 @@ a{
 .logo .accent{
  color: var(--accent-color);
 }
-.list{
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-}
+
  
 
 /* hero */
@@ -90,11 +101,15 @@ margin-bottom: 94px;
 /* nav */
 .site-nav .link,
 .contacts-nav .link{
+ display: block;
+ padding-top: 32px;
+ padding-bottom: 32px;
  color:var(--primary-text-color);
  font-weight: 500;
  font-size: 14px;
  line-height: 1.14;
  letter-spacing: 0.02em;
+
 }
 
 .site-nav .link:hover, 
@@ -105,20 +120,46 @@ margin-bottom: 94px;
 color:var(--accent-color);
 }
 
-/* section */
-.section{
-  
- 
-
+.site-nav{
+  display: flex;
+  margin-left: 85px;
 }
 
+.site-nav .item:not(:last-child) {
+margin-right: 50px;
+}
 
+.contacts-nav{
+  display: flex;
+}
+
+.contacts-nav .item{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+color:var(--secondary-text-color);
+}
+
+.contacts-nav .item:not(:last-child){
+  margin-right: 30px;
+}
+
+.header-address{
+  margin-left: auto;
+}
+/* section */
 .section-paragraph,
 .section-profession,
 .section-customer{
  color:var(--secondary-text-color);
 }
 
+.qualities{
+  display: flex;
+}
 .qualities-img{
   margin-bottom: 30px;
 }
