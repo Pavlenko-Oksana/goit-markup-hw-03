@@ -77,9 +77,9 @@ color: var(--accent-color-white);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.8;
-display: flex;
 align-items: center;
 text-align: center;
+border-radius: 4px;
 letter-spacing: 0.06em;
 margin-bottom: 94px;
 }
@@ -94,7 +94,7 @@ margin-bottom: 94px;
  color: #FFFFFF; 
  margin-top: 0px;
  margin-bottom: 30px;
- background-color: violet;
+ background-color: var(--footer-background-color);
 
 }
 
@@ -123,6 +123,10 @@ color:var(--accent-color);
 .site-nav{
  display: flex;
  margin-left: 85px;
+}
+
+.site-nav .current{
+  color: var(--accent-color);
 }
 
 .site-nav .item:not(:last-child) {
@@ -159,6 +163,7 @@ color:var(--secondary-text-color);
 
 .qualities{
   display: flex;
+  background-color: violet;
 }
 
 .qualities .qualities-img:not(:last-child){
@@ -171,6 +176,18 @@ color:var(--secondary-text-color);
 
 .qualities-name{
   margin-bottom: 10px;
+}
+
+.services{
+  display: flex;
+}
+
+.services .item:not(:last-child){
+margin-right: 30px;
+}
+
+.section{
+  text-align: center;
 }
 
 .section-customer{
@@ -197,6 +214,15 @@ color: #212121;
 .section-customer{
   margin-top: 0px;
   margin-bottom: 20px;
+}
+
+.about-team{
+  display: flex;
+  background-color: violet;
+}
+
+.about-team .item:not(:last-child){
+  margin-right: 30px;
 }
 
 .title-serv,
@@ -230,7 +256,7 @@ color: #212121;
  font-weight: 400;
  font-size: 18px;
  line-height: 1.5;
- background-color: violet;
+ background-color: var(--accent-color);
  margin-top: 0px;
  margin-bottom: 0px;
 }
@@ -242,15 +268,23 @@ color: #212121;
  line-height: 1.14;
  text-align: center;
  text-transform: uppercase;
- background-color: violet;
+ background-color: var(--footer-background-color);
 }
 .team{
  background-color: var(--secondary-background-color);
 }
 
+.regular-customers{
+  display: flex;
+ 
+}
+.regular-customers .item:not(:last-child){
+ margin-right: 30px;
+}
+
 .filter-button{
  display: flex;
-}
+ }
 
 .filter-button .item:not(:last-child){
  margin-right: 8px;
@@ -323,6 +357,7 @@ margin-bottom: 8px;
   color:var(--primary-text-color);
   background-color: var(--secondary-background-color);  
   font-family: inherit;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus{
