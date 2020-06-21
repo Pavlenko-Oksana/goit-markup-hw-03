@@ -163,7 +163,7 @@ color:var(--secondary-text-color);
 
 .qualities{
   display: flex;
-  background-color: violet;
+  
 }
 
 .qualities .qualities-img:not(:last-child){
@@ -188,6 +188,8 @@ margin-right: 30px;
 
 .section{
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-customer{
@@ -218,11 +220,11 @@ color: #212121;
 
 .about-team{
   display: flex;
-  background-color: violet;
+  
 }
 
-.about-team .item:not(:last-child){
-  margin-right: 30px;
+.about-team .item:not(:first-child){
+  margin-left: 30px;
 }
 
 .title-serv,
@@ -284,6 +286,7 @@ color: #212121;
 
 .filter-button{
  display: flex;
+ justify-content: center;
  }
 
 .filter-button .item:not(:last-child){
@@ -363,4 +366,17 @@ margin-bottom: 8px;
 .button:focus{
  background-color:var(--accent-color);
  color:var(--accent-color-white);
+}
+
+.footer-content{
+  display: flex;
+}
+
+.footer-address{
+  margin-right: 69px;
+  margin-top: 60px;
+}
+
+.footer-links{
+  margin-top: 60px;
 }
