@@ -34,11 +34,11 @@ a{
 
 
 .conainer{
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   outline: 2px solid teal;
 }
@@ -366,6 +366,14 @@ margin-bottom: 8px;
 .button:focus{
  background-color:var(--accent-color);
  color:var(--accent-color-white);
+}
+
+.button-list{
+  padding-bottom: 0px;
+}
+
+.gallery-content{
+  padding-top: 34px;
 }
 
 .footer-content{
